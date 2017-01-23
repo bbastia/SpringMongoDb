@@ -6,7 +6,9 @@
 	var i=10;
 	$document.ready(function(){
 		$("p").click(function(){
-		$(this).slideup(1000);
+			$(this).click(function(){
+				$(this).exit();
+			});
 		});
 	});
 	
